@@ -40,7 +40,7 @@ $(document).on("click", "#btnSave", function(event) {
 	// If valid------------------------
 		//$("#formFund").submit();
 	var type = ($("#hidIdfundSave").val() == "") ? "POST" : "PUT";
-	alert($("#hidIdfundSave").val());
+	//alert($("#hidIdfundSave").val());
 	$.ajax(
 		{
 			 url : "FundsAPI",

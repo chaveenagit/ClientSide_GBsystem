@@ -107,10 +107,17 @@ public class Fund {
 				output += "<td>" + clientID + "</td>";
 				output += "<td>" + fundAmount + "</td>";
 				output += "<td>" + status + "</td>";
+				
+				// buttons
+				 output += "<td><input name='btnUpdate' type='button' value='Update' class =' btnUpdate btn btn-secondary' data-idfund='" + idfund + "'></td>"
+				 + "<td><form method='post' action='funds.jsp'>"
+				 + "<input name='btnRemove' type='button' value='Remove' class='btnRemove btn btn-danger' data-idfund='" + idfund + "'>"
+				 + "<input name='hidIdfundDelete' type='hidden'  value='" + idfund + "'>" + "</form></td></tr>"; 
+				  
 
 				// buttons
-				output += "<td><input name='btnUpdate' type='button' value='Update' class=' btnUpdate btn btn-secondary'></td>" 
-				+ "<td><input name='btnRemove' type='button' value='Remove' class='btnRemove btn btn-danger' data-idfund='" + idfund + "'></td></tr>";
+//				output += "<td><input name='btnUpdate' type='button' value='Update' class=' btnUpdate btn btn-secondary'></td>" 
+//				+ "<td><input name='btnRemove' type='button' value='Remove' class='btnRemove btn btn-danger' data-idfund='" + idfund + "'></td></tr>";
 
 			}
 
